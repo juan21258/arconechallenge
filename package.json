@@ -1,0 +1,25 @@
+{
+  "name": "arconechallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "user_order_tests.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "uitest": "tsc ./tests/user_order_tests.ts && node ./tests/user_order_tests.js",
+    "apitest": "tsc ./tests/api_tests.ts && npx mocha ./tests/api_tests.js"
+  },
+  "devDependencies": {
+    "@types/ajv": "^1.0.0",
+    "@types/chromedriver": "^81.0.1",
+    "ajv": "^8.12.0",
+    "chai": "^4.3.7",
+    "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "@types/selenium-webdriver": "^4.1.13",
+    "chromedriver": "^112.0.0",
+    "selenium-webdriver": "^4.8.2"
+  }
+}
